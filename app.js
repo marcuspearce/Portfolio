@@ -5,15 +5,31 @@ var app = express();
 
 app.set("view engine", "ejs");
 
-// ROOT ROUTE
+
+// ********** ROUTES **********
+
+
+// Home ROUTE
 app.get("/",function(req,res){
     res.render("home");
 });
 
-// SECOND ROUTE
-app.get("/second",function(req,res){
-    res.render("second");
+// ABOUT ROUTE
+app.get("/about",function(req,res){
+    res.render("about");
 });
+
+// PROJECTS ROUTE
+app.get("/projects",function(req,res){
+    res.render("projects");
+});
+
+// LINKS ROUTE
+app.get("/links",function(req,res){
+    res.render("links");
+});
+
+
 
 // START SERVER
 app.listen(process.env.PORT, process.env.IP, function(){
