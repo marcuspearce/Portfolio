@@ -1,17 +1,45 @@
-<% include ../partials/header %>
+<% include ./partials/header %>
+
+<div class="container-fluid">
+    
+    <div id="home-top" class="row home-row">
+        
+        <div class="col-4">
+            <a href="/about">
+                <button class="btn btn-block btn-info">About</button>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/projects">
+                <button class="btn btn-block btn-info">Projects</button>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/links">
+                <button class="btn btn-block btn-info">Links</button>
+            </a>
+        </div>
+
+    </div>
+    
+    
+    <div id="home-main" class="row home-row">
+        
+        <div class="col-12">
+            <div class="typewriter">
+                <h1><strong>Marcus Pearce</strong></h1>
+            </div>
+            
+            <p><em>Teacher. Dancer. Budding Developer.</em></p>
+        </div>
+    
+    </div>
 
 
-<div>
-    <h1><strong>Marcus Pearce</strong></h1>
-    <p><em>Dancer, Teacher, Budding Developer</em></p>
+
+        
+    
 </div>
 
-<div>
-    <div><a href="/about">About</a></div>
-    <div><a href="/projects">Projects</a></div>
-    <div><a href="/links">Links</a></div>
-</div>
 
-
-
-<% include ../partials/footer %>
+<% include ./partials/footer %>
