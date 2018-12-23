@@ -1,6 +1,26 @@
 body {
-  background: #222222;
   color: white;
+  background: #222;
+}
+
+#home-body {
+  /*code for pulsing background colour*/
+  background: #222;
+  animation-name: pulse;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+}
+
+#home-border {
+  /*Below for border*/
+	border-top: 2px solid white;
+	width:90%;
+	padding-top: 20px;
+}
+
+.myBtn {
+  width:33.3%;
+  background:cyan;
 }
 
 #home-top {
@@ -8,12 +28,29 @@ body {
 }
 
 #home-main {
-  margin: 15% 0 0 0;
+  margin: 20% 0 0 0;
+  text-align:center;
 }
 
-.home-row{
-  text-align: center;
+/*.home-row{*/
+/*  text-align: center;*/
+/*}*/
+
+
+/*========== PULSING BACKGROUND EFFECT ==========*/
+
+@keyframes pulse {
+  0% {
+    background-color: #343a40;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #343a40;
+  }
 }
+
 
 /* ========== TYPE OUT EFFECT ========== */
 
@@ -28,16 +65,16 @@ body {
   letter-spacing: .1em; /* Adjust as needed */
   /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
-    typing 1s steps(20, end),
-    blink-caret .5s step-end infinite;
+    type 1s steps(20, end),
+    blinkCursor .5s step-end infinite;
 }
 /* The typing effect */
-@keyframes typing {
+@keyframes type {
   from { width: 0 }
   to { width: 100% }
 }
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+@keyframes blinkCursor {
   from, to { border-color: transparent }
   50% { border-color: cyan }
 }

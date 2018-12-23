@@ -1,45 +1,48 @@
-<% include ./partials/header %>
-
-<div class="container-fluid">
-    
-    <div id="home-top" class="row home-row">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marcus Pearce</title>
         
-        <div class="col-4">
-            <a href="/about">
-                <button class="btn btn-block btn-info">About</button>
-            </a>
-        </div>
-        <div class="col-4">
-            <a href="/projects">
-                <button class="btn btn-block btn-info">Projects</button>
-            </a>
-        </div>
-        <div class="col-4">
-            <a href="/links">
-                <button class="btn btn-block btn-info">Links</button>
-            </a>
-        </div>
-
-    </div>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    </head>
     
     
-    <div id="home-main" class="row home-row">
-        
-        <div class="col-12">
-            <div class="typewriter">
-                <h1><strong>Marcus Pearce</strong></h1>
+    <body id="home-body">
+    
+        <div class="container-fluid">
+            <span>
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    MP
+                </button>
+            </span>
+            <div class="collapse" id="collapseExample">
+                <div class=" ">
+                    <a class = "btn btn-block btn-info" href="/about">About</a>
+                    <a class = "btn btn-block btn-info" href="/projects">Projects</a>
+                    <a class = "btn btn-block btn-info" href="/links">Links</a>
+                </div>
             </div>
+        </div>    
+                
+        <div id="home-border" class="container-fluid">
             
-            <p><em>Teacher. Dancer. Budding Developer.</em></p>
+            <div id="home-main" class="row">
+                
+                <div class="col-12">
+                    <div class="typewriter">
+                        <h1><strong>Marcus Pearce</strong></h1>
+                    </div>
+                    
+                    <p><em>Teacher. Dancer. Budding Developer.</em></p>
+                </div>
+            
+            </div>
         </div>
-    
-    </div>
 
 
-
-        
-    
-</div>
-
-
-<% include ./partials/footer %>
+    </body>
+</html>
