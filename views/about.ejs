@@ -1,21 +1,46 @@
 <% include ./partials/header %>
 
 
-<div>
-    <h1>Who am I?</h1>
-    <p>
-        UCLA, Lynbrook, studying CS, yadda yadda insert brief autobio here
-    </p>
-</div>
-<div>
-    <h1>Contact Info</h1>
-    <ul>
-        <li>Email: marcuspearce7@gmail.com</li>
-        <li>Phone: (408)805-9459</li>
-    </ul>
-</div>
+<body>
+    
+<!--========== COLLAPSING BUTTONS ==========-->
 
-<a href="/">Home</a>
+    <div class="container-fluid">
+
+        <div class="collapse" id="collapseExample">
+            <a class = "btn btn-block btn-info" href="/">Home</a>
+            <a class = "btn btn-block btn-info" href="/projects">Projects</a>
+            <a class = "btn btn-block btn-info" href="/links">Links</a>
+            
+        </div>
+    </div> 
+    
+<!--========== DROPDOWN LINE AND ARROW ==========-->
+            
+    <div class="container-fluid topBorder">
+        
+        <p class="dropdownArrow">
+            <button class="btn dropdownArrowButton" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <strong>﹀</strong>
+            </button>
+        </p>
+        
+<!--========== MAIN CONTENT ==========-->
+
+    <div>
+        <h1>Who am I?</h1>
+        <p>
+            UCLA, Lynbrook, studying CS, yadda yadda insert brief autobio here
+        </p>
+    </div>
+    <div>
+        <h1>Contact Info</h1>
+        <ul>
+            <li>Email: marcuspearce7@gmail.com</li>
+            <li>Phone: (408)805-9459</li>
+        </ul>
+    </div>
+
 
 
 <% include ./partials/footer %>

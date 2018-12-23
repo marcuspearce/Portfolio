@@ -3,14 +3,6 @@ body {
   background: #222;
 }
 
-#home-body {
-  /*code for pulsing background colour*/
-  background: #222;
-  animation-name: pulse;
-  animation-duration:2.5s;
-  animation-iteration-count:infinite;
-}
-
 #home-main {
   margin: 15% 0 0 0;
   text-align:center;
@@ -18,26 +10,30 @@ body {
 
 /*========== DOWN ARROW FOR DROPDOWN ========== */
 
-.myLogo {
+.dropdownArrow {
   text-align: center;
 }
-.myLogoButton {
+.dropdownArrowButton {
   font-size:200%;
   color:white;
-  letter-spacing: .1em; /* Adjust as needed */
-  animation: 
-    pulse 2.5s infinite
+  letter-spacing: .1em; 
+  background: #222;
 }
 
-/*========== BORDER ON TOP OF HOME PAGE ==========*/
+/*========== BORDER LINE ==========*/
 
-#home-border {
+.topBorder {
 	border-top: 2px solid white;
 	width:100%;
 	padding-top: 20px;
 }
 
 /*========== PULSING BACKGROUND EFFECT ==========*/
+
+.pulsing {
+  animation: 
+    pulse 2.5s infinite;
+}
 
 @keyframes pulse {
   0% {
@@ -61,7 +57,7 @@ body {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .1em solid #17a2b8; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .1em; /* Adjust as needed */
+  letter-spacing: .1em; 
   animation: 
     type 1s steps(20, end),
     blinkCursor .5s step-end infinite;

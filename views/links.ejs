@@ -1,18 +1,44 @@
 <% include ./partials/header %>
 
 
-<div>
-    <h1>Links</h1>
-</div>
+<body>
+    
+<!--========== COLLAPSING BUTTONS ==========-->
 
-<div>
-    <a href="https://github.com/marcuspearce">My Github</a>
-</div>
-<div>
-    <a>My resume (make downloadable)</a>
-</div>
+    <div class="container-fluid">
 
-<a href="/">Home</a>
+        <div class="collapse" id="collapseExample">
+            <a class = "btn btn-block btn-info" href="/">Home</a>
+            <a class = "btn btn-block btn-info" href="/about">About</a>
+            <a class = "btn btn-block btn-info" href="/projects">Projects</a>
+        </div>
+    </div> 
+    
+<!--========== DROPDOWN LINE AND ARROW ==========-->
+            
+    <div class="container-fluid topBorder">
+        
+        <p class="dropdownArrow">
+            <button class="btn dropdownArrowButton" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <strong>﹀</strong>
+            </button>
+        </p>
+        
+<!--========== MAIN CONTENT ==========-->
+
+    <div>
+        <h1>Links</h1>
+    </div>
+    
+    <div>
+        <a href="https://github.com/marcuspearce">My Github</a>
+    </div>
+    <div>
+        <a>My resume (make downloadable)</a>
+    </div>
+    
+
+
 
 
 <% include ./partials/footer %>
