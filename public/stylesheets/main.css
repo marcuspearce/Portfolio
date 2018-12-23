@@ -11,46 +11,45 @@ body {
   animation-iteration-count:infinite;
 }
 
-#home-border {
-  /*Below for border*/
-	border-top: 2px solid white;
-	width:90%;
-	padding-top: 20px;
-}
-
-.myBtn {
-  width:33.3%;
-  background:cyan;
-}
-
-#home-top {
-  margin: 2.5% 0;
-}
-
 #home-main {
-  margin: 20% 0 0 0;
+  margin: 15% 0 0 0;
   text-align:center;
 }
 
-/*.home-row{*/
-/*  text-align: center;*/
-/*}*/
+/*========== DOWN ARROW FOR DROPDOWN ========== */
 
+.myLogo {
+  text-align: center;
+}
+.myLogoButton {
+  font-size:200%;
+  color:white;
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    pulse 2.5s infinite
+}
+
+/*========== BORDER ON TOP OF HOME PAGE ==========*/
+
+#home-border {
+	border-top: 2px solid white;
+	width:100%;
+	padding-top: 20px;
+}
 
 /*========== PULSING BACKGROUND EFFECT ==========*/
 
 @keyframes pulse {
   0% {
-    background-color: #343a40;
+    background-color: #222;
   }
   50% {
     background-color: #000;
   }
   100% {
-    background-color: #343a40;
+    background-color: #222;
   }
 }
-
 
 /* ========== TYPE OUT EFFECT ========== */
 
@@ -60,10 +59,9 @@ body {
 .typewriter h1 {
   font-size:3.5em;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid cyan; /* The typwriter cursor */
+  border-right: .1em solid #17a2b8; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: .1em; /* Adjust as needed */
-  /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
     type 1s steps(20, end),
     blinkCursor .5s step-end infinite;
@@ -76,5 +74,5 @@ body {
 /* The typewriter cursor effect */
 @keyframes blinkCursor {
   from, to { border-color: transparent }
-  50% { border-color: cyan }
+  50% { border-color: #17a2b8 }
 }
