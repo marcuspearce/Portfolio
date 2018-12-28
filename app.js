@@ -26,7 +26,6 @@ app.get("/projects",function(req,res){
 });
 
 
-
 // START SERVER
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Portfolio has started");
