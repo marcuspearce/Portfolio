@@ -26,25 +26,66 @@
         
 <!--========== MAIN CONTENT ==========-->
 
-    <div>
-        <h1>Projects</h1>
-        <p>A glimpse into some of my personal projects ... more to come</p>
-    </div>
+        <h1 id="projectTitle">
+            <strong>Projects</strong>
+        </h1>
     
-    <div>
-        <h1>Car Show</h1>
-        <p>Insert description from README -> summary of what this project is</p>
-        <p>Add a screenshot (or more?)</p>
-        <a>link to github</a>
-    </div>
+        <div class="card myCard">
+            <div class="row">
+                <div class="col-4">
+                    <img class="myPhoto" src="https://lh3.googleusercontent.com/WGagtlz9PnmHbzbLjJQ-BtHprN7XMc43ajG-0auzwRFmezrXKNokfg8gam4_BMmsasV_vG9OAZrHXAn-x61Dg3k-uRF_5vtIFC4Tthax85kZCIPclPgZNqSPABf1O0XIghj86HpuPA=w2400">
+                </div>
+                <div class="col-8 card-body">
+                    <h1 class="card-title">
+                        Car Show
+                    </h1>
+                    <p class="card-text">
+                        A sample webpage showcasing my webdev abilities, based on the final project from Colt Steele's Udemy Course. Full-stack project, uses nodeJS, Bootstrap (styling), Cloud9 (IDE), mongoDB (database) and more.                
+                    </p>
+                    <p class="card-text">
+                        Different users can add cars (brand, model, image) and add comments to those "posts." User authentication (using passport) means users can only edit/delete their own posts/comments. Flash notifications provide user feedback.                    
+                    </p>
+                    <p class="card-text">
+                        <a class="btn btn-info" href="https://github.com/marcuspearce/Car-Show">GitHub Repo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     
-    <div>
-        <h1>Peckman</h1>
-        <p>Rendition of pacman w/ name lovingly inspired by my APCS teacher. Insert description from README -> summary of what this project is</p>
-        <p>Add a screenshot (or more?)</p>
-        <a>link to github</a>
-    </div>
+        <div class="card myCard">
+            <div class="row">
+                <div class="col-8 card-body">
+                    <h1 class="card-title">
+                        Peckman
+                    </h1>
+                    <p class="card-text">
+                        This is my final project from my APCS course I took junior year of high school - a recreation of Pacman (renamed for our teacher Mr. Peck). It incorporates object-oriented design and a queue data structure to create a game that plays very similarly to the original; the ghosts each have unique movement patterns which adapt to a given situation, Pacman interacts with the map as he should, scores and lives are recorded and incremented correctly and there is a "hypemode" when Pacman can briefly eat the ghosts while they run away.
+                    </p>
+                    <p class="card-text">
+                        We used the java-oriented environment Greenfoot to help create the GUI. We developed the individual classes and methods in Eclipse in Java from scratch.               
+                    </p>
+                    <p class="card-text">
+                        <a class="btn btn-info" href="https://github.com/marcuspearce/APCS-Final-Project">GitHub Repo</a>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img class="myPhoto" style="width:95%" src="https://lh3.googleusercontent.com/j9iEZiBJFlOAggAZHawmmsSaZU8AAXtOa4ooxErP8WyikXgAZlkXOWzUNOt2kS72_YMuPlXu5ba3MCb9PtuGOJMZcOozVgHPLS9A36XHe7_JCmcB0sD0apbtweDUcj3CIr-uMSFAaQ=w2400">
+                </div>
+            </div>
+        </div>
+        
+    </div> <!-- end earlier div container -->
 
+
+    <!--coming soon banner-->
+    <div class="jumbotron jumbotron-fluid comingSoon" >
+        <div class="container">
+            <h1 class="display-4">More to come</h1>
+            <div class="topBorder">
+                <p class="lead"><em>Check back soon!</em></p>
+            </div>
+        </div>
+    </div>
 
 
 

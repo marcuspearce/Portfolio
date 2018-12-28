@@ -8,19 +8,25 @@ body {
   text-align:center;
 }
 
+#projectTitle {
+  text-align:center;
+  letter-spacing:.05em;
+  margin-bottom:30px;
+}
+
 /*========== COMING SOON BANNER JUMBOTRON ========== */
 
 .comingSoon {
-  background:#343a40;
+  /*background:#343a40;*/
+  background: #b38600;
 }
 
-/*========== AUTOBIO CARD (ABOUT PAGE) ========== */
+/*========== CARD (AUTOBIO, PROJECTS) ========== */
 
 .myPhoto {
   border-radius: 8px;
   width:100%;
   margin:10px;
-
 }
 .myCard {
   background: #343a40;
