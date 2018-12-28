@@ -1,11 +1,30 @@
 body {
   color: white;
-  background: #222;
+  background: #111;
 }
 
 #home-main {
   margin: 15% 0 0 0;
   text-align:center;
+}
+
+/*========== COMING SOON BANNER JUMBOTRON ========== */
+
+.comingSoon {
+  background:#343a40;
+}
+
+/*========== AUTOBIO CARD (ABOUT PAGE) ========== */
+
+.myPhoto {
+  border-radius: 8px;
+  width:100%;
+  margin:10px;
+
+}
+.myCard {
+  background: #343a40;
+  margin-bottom: 30px;
 }
 
 /*========== DOWN ARROW FOR DROPDOWN ========== */
@@ -17,7 +36,7 @@ body {
   font-size:200%;
   color:white;
   letter-spacing: .1em; 
-  background: #222;
+  background: #111;
 }
 
 /*========== BORDER LINE ==========*/
@@ -37,13 +56,13 @@ body {
 
 @keyframes pulse {
   0% {
-    background-color: #222;
-  }
-  50% {
     background-color: #000;
   }
-  100% {
+  50% {
     background-color: #222;
+  }
+  100% {
+    background-color: #000;
   }
 }
 
