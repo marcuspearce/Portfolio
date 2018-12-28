@@ -25,11 +25,6 @@ app.get("/projects",function(req,res){
     res.render("projects");
 });
 
-// LINKS ROUTE
-app.get("/links",function(req,res){
-    res.render("links");
-});
-
 
 
 // START SERVER
